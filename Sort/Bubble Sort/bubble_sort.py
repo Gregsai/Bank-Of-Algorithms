@@ -7,7 +7,8 @@ def bubble_sort(array):
 
 def main():
     array = [5, 1, 4, 2, 8]
-    print("Sorted array:\n", bubble_sort(array))
+    print("Sorted array:\n", bubble_sort(array)
+)
     return 0
 
 if __name__ == '__main__':
