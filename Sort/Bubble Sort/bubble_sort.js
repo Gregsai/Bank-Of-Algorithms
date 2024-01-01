@@ -1,18 +1,17 @@
-function bubble_sort(array) {
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array.length - (i + 1); j++) {
-      if (array[j] > array[j + 1]) {
-        [array[j], array[j + 1]] = [array[j + 1], array[j]];
-      }
+function bubbleSort(array) {
+    var _a;
+    for (var i = 0; i < array.length; i++) {
+        for (var j = 0; j < array.length - (i + 1); j++) {
+            if (array[j] > array[j + 1]) {
+                _a = [array[j + 1], array[j]], array[j] = _a[0], array[j + 1] = _a[1];
+            }
+        }
     }
-  }
-  return array;
+    return array;
 }
-
 function main() {
-  let array = [5, 1, 4, 2, 8];
-  console.log("Sorted array:\n", bubble_sort(array));
-  return 0;
+    var array = [5, 1, 4, 2, 8];
+    console.log("Sorted array:\n", bubbleSort(array));
+    return 0;
 }
-
 main();
